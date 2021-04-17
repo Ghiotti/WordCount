@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DEACA8BD635B49244B369DB /* Pods_WordCount_WordCountUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53FE1BF86F1D13F7208F3040 /* Pods_WordCount_WordCountUITests.framework */; };
+		502BCC5228ABDBD992FFDC86 /* Pods_WordCount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23904A9697DEB5C0DDAD3EFE /* Pods_WordCount.framework */; };
+		7C369A9DE15BF186770E92F0 /* Pods_WordCountTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402825AD4551726CB00A479 /* Pods_WordCountTests.framework */; };
 		A8047218262AF05700B015EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8047217262AF05700B015EB /* AppDelegate.swift */; };
 		A804721A262AF05700B015EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8047219262AF05700B015EB /* SceneDelegate.swift */; };
 		A804721C262AF05700B015EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804721B262AF05700B015EB /* ViewController.swift */; };
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23904A9697DEB5C0DDAD3EFE /* Pods_WordCount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordCount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C59A1AB88A4C8BEABBC3A6B /* Pods-WordCount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCount.release.xcconfig"; path = "Target Support Files/Pods-WordCount/Pods-WordCount.release.xcconfig"; sourceTree = "<group>"; };
+		53FE1BF86F1D13F7208F3040 /* Pods_WordCount_WordCountUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordCount_WordCountUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		603F5FD8D0B16BDE22312D37 /* Pods-WordCountTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCountTests.release.xcconfig"; path = "Target Support Files/Pods-WordCountTests/Pods-WordCountTests.release.xcconfig"; sourceTree = "<group>"; };
+		8402825AD4551726CB00A479 /* Pods_WordCountTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordCountTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88AD5C7056989B979A0A98EC /* Pods-WordCount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCount.debug.xcconfig"; path = "Target Support Files/Pods-WordCount/Pods-WordCount.debug.xcconfig"; sourceTree = "<group>"; };
 		A8047214262AF05700B015EB /* WordCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8047217262AF05700B015EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8047219262AF05700B015EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,9 @@
 		A8047235262AF05800B015EB /* WordCountUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordCountUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8047239262AF05800B015EB /* WordCountUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCountUITests.swift; sourceTree = "<group>"; };
 		A804723B262AF05800B015EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE5BED3DC000B33083855F7 /* Pods-WordCountTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCountTests.debug.xcconfig"; path = "Target Support Files/Pods-WordCountTests/Pods-WordCountTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9DC401C129A969F9C578C5C /* Pods-WordCount-WordCountUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCount-WordCountUITests.debug.xcconfig"; path = "Target Support Files/Pods-WordCount-WordCountUITests/Pods-WordCount-WordCountUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F185BCADA1048C7C6D1D87DC /* Pods-WordCount-WordCountUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCount-WordCountUITests.release.xcconfig"; path = "Target Support Files/Pods-WordCount-WordCountUITests/Pods-WordCount-WordCountUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502BCC5228ABDBD992FFDC86 /* Pods_WordCount.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C369A9DE15BF186770E92F0 /* Pods_WordCountTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DEACA8BD635B49244B369DB /* Pods_WordCount_WordCountUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74416BBA3F061FEF6C6283EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23904A9697DEB5C0DDAD3EFE /* Pods_WordCount.framework */,
+				53FE1BF86F1D13F7208F3040 /* Pods_WordCount_WordCountUITests.framework */,
+				8402825AD4551726CB00A479 /* Pods_WordCountTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A804720B262AF05700B015EB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				A804722D262AF05800B015EB /* WordCountTests */,
 				A8047238262AF05800B015EB /* WordCountUITests */,
 				A8047215262AF05700B015EB /* Products */,
+				CBCFF781B249D8412FCFD13A /* Pods */,
+				74416BBA3F061FEF6C6283EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +155,19 @@
 			path = WordCountUITests;
 			sourceTree = "<group>";
 		};
+		CBCFF781B249D8412FCFD13A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88AD5C7056989B979A0A98EC /* Pods-WordCount.debug.xcconfig */,
+				2C59A1AB88A4C8BEABBC3A6B /* Pods-WordCount.release.xcconfig */,
+				E9DC401C129A969F9C578C5C /* Pods-WordCount-WordCountUITests.debug.xcconfig */,
+				F185BCADA1048C7C6D1D87DC /* Pods-WordCount-WordCountUITests.release.xcconfig */,
+				BCE5BED3DC000B33083855F7 /* Pods-WordCountTests.debug.xcconfig */,
+				603F5FD8D0B16BDE22312D37 /* Pods-WordCountTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A804723E262AF05800B015EB /* Build configuration list for PBXNativeTarget "WordCount" */;
 			buildPhases = (
+				C394EEDC02B8465677687A5A /* [CP] Check Pods Manifest.lock */,
 				A8047210262AF05700B015EB /* Sources */,
 				A8047211262AF05700B015EB /* Frameworks */,
 				A8047212262AF05700B015EB /* Resources */,
+				10FC14E40C7DF3E13146DD33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8047241262AF05800B015EB /* Build configuration list for PBXNativeTarget "WordCountTests" */;
 			buildPhases = (
+				B91E290DE43B9A4D045FFCB6 /* [CP] Check Pods Manifest.lock */,
 				A8047226262AF05800B015EB /* Sources */,
 				A8047227262AF05800B015EB /* Frameworks */,
 				A8047228262AF05800B015EB /* Resources */,
@@ -170,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8047244262AF05800B015EB /* Build configuration list for PBXNativeTarget "WordCountUITests" */;
 			buildPhases = (
+				2FFEDBC656652EBA62DC2069 /* [CP] Check Pods Manifest.lock */,
 				A8047231262AF05800B015EB /* Sources */,
 				A8047232262AF05800B015EB /* Frameworks */,
 				A8047233262AF05800B015EB /* Resources */,
+				17E11F264DE6D69A6F4AF9BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +297,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10FC14E40C7DF3E13146DD33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WordCount/Pods-WordCount-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WordCount/Pods-WordCount-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WordCount/Pods-WordCount-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17E11F264DE6D69A6F4AF9BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WordCount-WordCountUITests/Pods-WordCount-WordCountUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WordCount-WordCountUITests/Pods-WordCount-WordCountUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WordCount-WordCountUITests/Pods-WordCount-WordCountUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FFEDBC656652EBA62DC2069 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordCount-WordCountUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B91E290DE43B9A4D045FFCB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordCountTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C394EEDC02B8465677687A5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordCount-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8047210262AF05700B015EB /* Sources */ = {
@@ -433,6 +581,7 @@
 		};
 		A804723F262AF05800B015EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88AD5C7056989B979A0A98EC /* Pods-WordCount.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +601,7 @@
 		};
 		A8047240262AF05800B015EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C59A1AB88A4C8BEABBC3A6B /* Pods-WordCount.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +621,7 @@
 		};
 		A8047242262AF05800B015EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCE5BED3DC000B33083855F7 /* Pods-WordCountTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +644,7 @@
 		};
 		A8047243262AF05800B015EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 603F5FD8D0B16BDE22312D37 /* Pods-WordCountTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +667,7 @@
 		};
 		A8047245262AF05800B015EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9DC401C129A969F9C578C5C /* Pods-WordCount-WordCountUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +688,7 @@
 		};
 		A8047246262AF05800B015EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F185BCADA1048C7C6D1D87DC /* Pods-WordCount-WordCountUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

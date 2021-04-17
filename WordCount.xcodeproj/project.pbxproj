@@ -20,6 +20,9 @@
 		A804723A262AF05800B015EB /* WordCountUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8047239262AF05800B015EB /* WordCountUITests.swift */; };
 		A8047267262AF79700B015EB /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8047266262AF79700B015EB /* SplashViewController.swift */; };
 		A8047270262AF7DC00B015EB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804726F262AF7DC00B015EB /* BaseViewController.swift */; };
+		A80472BF262AFC8500B015EB /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80472BE262AFC8500B015EB /* HomePresenter.swift */; };
+		A80472C7262B0C6600B015EB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80472C6262B0C6600B015EB /* HomeViewController.swift */; };
+		A80472CE262B0E5600B015EB /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80472CD262B0E5600B015EB /* Assets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		A804723B262AF05800B015EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8047266262AF79700B015EB /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		A804726F262AF7DC00B015EB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A80472BE262AFC8500B015EB /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		A80472C6262B0C6600B015EB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A80472CD262B0E5600B015EB /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		BCE5BED3DC000B33083855F7 /* Pods-WordCountTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCountTests.debug.xcconfig"; path = "Target Support Files/Pods-WordCountTests/Pods-WordCountTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9DC401C129A969F9C578C5C /* Pods-WordCount-WordCountUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCount-WordCountUITests.debug.xcconfig"; path = "Target Support Files/Pods-WordCount-WordCountUITests/Pods-WordCount-WordCountUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F185BCADA1048C7C6D1D87DC /* Pods-WordCount-WordCountUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCount-WordCountUITests.release.xcconfig"; path = "Target Support Files/Pods-WordCount-WordCountUITests/Pods-WordCount-WordCountUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 		A8047216262AF05700B015EB /* WordCount */ = {
 			isa = PBXGroup;
 			children = (
+				A80472CB262B0E3E00B015EB /* Aplication */,
 				A8047264262AF2F600B015EB /* Utils */,
 				A8047263262AF2E700B015EB /* Presenters */,
 				A8047262262AF2D200B015EB /* ViewControllers */,
@@ -206,6 +213,7 @@
 		A8047277262AF99400B015EB /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A80472C6262B0C6600B015EB /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -213,8 +221,17 @@
 		A8047278262AF9B400B015EB /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A80472BE262AFC8500B015EB /* HomePresenter.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		A80472CB262B0E3E00B015EB /* Aplication */ = {
+			isa = PBXGroup;
+			children = (
+				A80472CD262B0E5600B015EB /* Assets.swift */,
+			);
+			path = Aplication;
 			sourceTree = "<group>";
 		};
 		CBCFF781B249D8412FCFD13A /* Pods */ = {
@@ -470,8 +487,11 @@
 			files = (
 				A8047270262AF7DC00B015EB /* BaseViewController.swift in Sources */,
 				A804721C262AF05700B015EB /* ViewController.swift in Sources */,
+				A80472CE262B0E5600B015EB /* Assets.swift in Sources */,
 				A8047218262AF05700B015EB /* AppDelegate.swift in Sources */,
 				A804721A262AF05700B015EB /* SceneDelegate.swift in Sources */,
+				A80472BF262AFC8500B015EB /* HomePresenter.swift in Sources */,
+				A80472C7262B0C6600B015EB /* HomeViewController.swift in Sources */,
 				A8047267262AF79700B015EB /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

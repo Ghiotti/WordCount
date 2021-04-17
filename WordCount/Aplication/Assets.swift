@@ -13,7 +13,7 @@ protocol AssetsProvider {
 }
 
 enum HomeAssets: String, AssetsProvider {
-    case addButton = "HommeAddButton"
+    case addButton = "HomeAddImage"
 
     var name: String { rawValue }
     var image: UIImage { UIImage(named: rawValue)! }

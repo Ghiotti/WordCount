@@ -36,12 +36,15 @@ class HomeViewController: BaseViewController {
         
         addNewFileButton.snp.makeConstraints { (make) in
             make.height.width.equalTo(50)
-            make.bottom.equalTo(view.snp.bottom).inset(16)
-            make.trailing.equalToSuperview().inset(16)
+            make.bottom.equalTo(view.snp.bottom).inset(40)
+            make.trailing.equalToSuperview().inset(20)
         }
     }
     
     override func addConfiguration() {
+        filesTableView.delegate = self
+        filesTableView.dataSource = self
+
         presenter = HomePresenter(view: self)
         emptyFilesLabel.text = "You don't have files press '+' to add one"
         addNewFileButton.addTarget(self, action:#selector(addButtonWasPresed), for: .touchUpInside)
@@ -51,7 +54,7 @@ class HomeViewController: BaseViewController {
     
     override func addStyle() {
         emptyFilesLabel.isHidden = true
-//        addNewFileButton.setImage(HomeAssets.addButton.image, for: .normal)
+        addNewFileButton.setImage(HomeAssets.addButton.image, for: .normal)
         filesTableView.tableFooterView = UIView()
     }
     
@@ -64,9 +67,6 @@ class HomeViewController: BaseViewController {
         documentPicker.allowsMultipleSelection = false
         documentPicker.delegate = self
         
-        filesTableView.delegate = self
-        filesTableView.dataSource = self
-
         present(documentPicker, animated: true, completion: nil)
     }
     
@@ -79,13 +79,25 @@ class HomeViewController: BaseViewController {
 
 extension HomeViewController: UIDocumentPickerDelegate {
     
-    private func documentPicker(controller: UIDocumentPickerViewController, didPickDocumentAtURL url: NSURL) {
-        debugPrint(url)
+    func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+        presenter.didGetNewDocument(url: urls.first)
     }
 }
 
 // MARK: - HomeDelegate
 extension HomeViewController: HomeDelegate {
+    
+    func didGetError(text: String) {
+        let alertView = UIAlertController(title: "Error", message: text, preferredStyle: .alert)
+        alertView.addAction(UIAlertAction(title: "Acept", style: .default, handler: nil))
+        
+        present(alertView, animated: true, completion: nil)
+    }
+    
+    func didAddNewFile() {
+        emptyFilesLabel.isHidden = true
+        filesTableView.reloadData()
+    }
     
     func showDataPicker() {
         self.perfomDataPicker()
@@ -97,6 +109,7 @@ extension HomeViewController: HomeDelegate {
     
     func didHaveAFiles() {
         emptyFilesLabel.isHidden = true
+        filesTableView.reloadData()
     }
     
     func didPressFile(text: String) {
@@ -108,7 +121,7 @@ extension HomeViewController: HomeDelegate {
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
@@ -117,10 +130,14 @@ extension HomeViewController: UITableViewDelegate {
 extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return presenter.numberOfFiles()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = UITableViewCell()
+        cell.textLabel?.text = presenter.titleForRow(row: indexPath.row)
+        cell.accessoryType = .disclosureIndicator
+        
+        return cell
     }
 }

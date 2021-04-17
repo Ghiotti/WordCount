@@ -18,6 +18,8 @@
 		A8047224262AF05800B015EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8047222262AF05800B015EB /* LaunchScreen.storyboard */; };
 		A804722F262AF05800B015EB /* WordCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804722E262AF05800B015EB /* WordCountTests.swift */; };
 		A804723A262AF05800B015EB /* WordCountUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8047239262AF05800B015EB /* WordCountUITests.swift */; };
+		A8047267262AF79700B015EB /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8047266262AF79700B015EB /* SplashViewController.swift */; };
+		A8047270262AF7DC00B015EB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804726F262AF7DC00B015EB /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		A8047235262AF05800B015EB /* WordCountUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordCountUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8047239262AF05800B015EB /* WordCountUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCountUITests.swift; sourceTree = "<group>"; };
 		A804723B262AF05800B015EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8047266262AF79700B015EB /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		A804726F262AF7DC00B015EB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BCE5BED3DC000B33083855F7 /* Pods-WordCountTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCountTests.debug.xcconfig"; path = "Target Support Files/Pods-WordCountTests/Pods-WordCountTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E9DC401C129A969F9C578C5C /* Pods-WordCount-WordCountUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCount-WordCountUITests.debug.xcconfig"; path = "Target Support Files/Pods-WordCount-WordCountUITests/Pods-WordCount-WordCountUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F185BCADA1048C7C6D1D87DC /* Pods-WordCount-WordCountUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordCount-WordCountUITests.release.xcconfig"; path = "Target Support Files/Pods-WordCount-WordCountUITests/Pods-WordCount-WordCountUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +130,9 @@
 		A8047216262AF05700B015EB /* WordCount */ = {
 			isa = PBXGroup;
 			children = (
+				A8047264262AF2F600B015EB /* Utils */,
+				A8047263262AF2E700B015EB /* Presenters */,
+				A8047262262AF2D200B015EB /* ViewControllers */,
 				A8047217262AF05700B015EB /* AppDelegate.swift */,
 				A8047219262AF05700B015EB /* SceneDelegate.swift */,
 				A804721B262AF05700B015EB /* ViewController.swift */,
@@ -153,6 +160,61 @@
 				A804723B262AF05800B015EB /* Info.plist */,
 			);
 			path = WordCountUITests;
+			sourceTree = "<group>";
+		};
+		A8047262262AF2D200B015EB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8047277262AF99400B015EB /* Home */,
+				A804726E262AF7CF00B015EB /* Base */,
+				A8047265262AF32900B015EB /* InitialFlow */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A8047263262AF2E700B015EB /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				A8047278262AF9B400B015EB /* Home */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		A8047264262AF2F600B015EB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A8047265262AF32900B015EB /* InitialFlow */ = {
+			isa = PBXGroup;
+			children = (
+				A8047266262AF79700B015EB /* SplashViewController.swift */,
+			);
+			path = InitialFlow;
+			sourceTree = "<group>";
+		};
+		A804726E262AF7CF00B015EB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A804726F262AF7DC00B015EB /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A8047277262AF99400B015EB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A8047278262AF9B400B015EB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		CBCFF781B249D8412FCFD13A /* Pods */ = {
@@ -406,9 +468,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8047270262AF7DC00B015EB /* BaseViewController.swift in Sources */,
 				A804721C262AF05700B015EB /* ViewController.swift in Sources */,
 				A8047218262AF05700B015EB /* AppDelegate.swift in Sources */,
 				A804721A262AF05700B015EB /* SceneDelegate.swift in Sources */,
+				A8047267262AF79700B015EB /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

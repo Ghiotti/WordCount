@@ -17,11 +17,11 @@ class Session {
     
     private var defaults: UserDefaults = .standard
 
-    var files: [TxtFiles]? {
+    var files: [TxtFile]? {
             get {
                 if let userData = defaults.object(forKey: Constants.UserDefaults.filesKey) as? Data {
                     let decoder = JSONDecoder()
-                    if let personDataDecode = try? decoder.decode([TxtFiles].self, from: userData) {
+                    if let personDataDecode = try? decoder.decode([TxtFile].self, from: userData) {
                         return personDataDecode
                     }
                 }

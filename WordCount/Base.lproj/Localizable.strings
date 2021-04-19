@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  WordCount
+
+  Created by Franco Ghiotti on 18/4/21.
+  
+*/
+
+
+/* Commons */
+"error" = "Error";
+"acept" = "Accept";
+
+/* Home */
+
+"home_emprty_files" = "You don't have files press '+' to add one";
+"home_file_already_added" = "This file is already added, please select another";
+"home_error_generic" = "Ups, an error has occurred, please try another file";

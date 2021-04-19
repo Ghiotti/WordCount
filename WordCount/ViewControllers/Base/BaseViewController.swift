@@ -13,6 +13,8 @@ protocol BaseViewControllerProtocol {
     func addSubviews()
     func addConstraints()
     func addStyle()
+    func showLoader()
+    func hideLoader()
 }
 
 // MARK: - BaseViewController
@@ -39,4 +41,12 @@ class BaseViewController: UIViewController, BaseViewControllerProtocol {
     open func addStyle() { }
     
     open func addConfiguration() { }
+    
+    func showLoader() {
+        view.showSpinner()
+    }
+    
+    func hideLoader() {
+        view.hideSpinner()
+    }
 }

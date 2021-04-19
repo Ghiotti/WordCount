@@ -46,13 +46,15 @@ class HomeViewController: BaseViewController {
         filesTableView.dataSource = self
 
         presenter = HomePresenter(view: self)
-        emptyFilesLabel.text = "You don't have files press '+' to add one"
+        emptyFilesLabel.text = "home_emprty_files".localized
         addNewFileButton.addTarget(self, action:#selector(addButtonWasPresed), for: .touchUpInside)
         
         presenter.fetchFiles()
     }
     
     override func addStyle() {
+        navigationController?.navigationBar.barTintColor = .primary
+
         emptyFilesLabel.isHidden = true
         addNewFileButton.setImage(HomeAssets.addButton.image, for: .normal)
         filesTableView.tableFooterView = UIView()
@@ -112,8 +114,10 @@ extension HomeViewController: HomeDelegate {
         filesTableView.reloadData()
     }
     
-    func didPressFile(text: String) {
-        
+    func didPressFile(file text: TxtFile) {
+        let detailViewController = FileDetailViewController()
+        detailViewController.fileDetail = text
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
 
@@ -121,6 +125,7 @@ extension HomeViewController: HomeDelegate {
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.didSelectFile(fileNumber: indexPath.row)
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }

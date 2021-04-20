@@ -112,10 +112,8 @@ extension FileDetailViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: defaultIdentifier) else {
-            return UITableViewCell(style: .value2, reuseIdentifier: self.defaultIdentifier)
-        }
-        
+        let cell = UITableViewCell(style: .value1, reuseIdentifier: self.defaultIdentifier)
+    
         let data = presenter.dataForRow(row: indexPath.row)
         cell.textLabel?.text = data.word
         cell.detailTextLabel?.text = data.number.description
